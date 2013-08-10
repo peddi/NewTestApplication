@@ -1,0 +1,11 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BC4JConfig version="11.1" xmlns="http://xmlns.oracle.com/bc4j/configuration">
+   <AppModuleConfigBag ApplicationName="ADFBCModel.service.ADFBCAppModule">
+      <AppModuleConfig name="13EA99406EB" DBconnection="java:comp/env/jdbc/XEDS" ApplicationName="ADFBCModel.service.ADFBCAppModule" DeployPlatform="LOCAL" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" JDBCName="XE" BC4JConfigName="ADFBCAppModuleLocal" jbo.project="ADFBCModel.ADFBCModelPrj">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="ADFBCModel.service.ADFBCAppModule"/>
+         <Tester FullProxyInterfaceName="ADFBCModel.service.common.ADFBCAppModule"/>
+         <Custom LastUsedConfiguration="ADFBCAppModuleLocal" JDBCDataSource="java:comp/env/jdbc/XEDS"/>
+      </AppModuleConfig>
+   </AppModuleConfigBag>
+</BC4JConfig>

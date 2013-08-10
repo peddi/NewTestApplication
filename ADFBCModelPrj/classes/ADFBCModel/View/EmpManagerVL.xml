@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewLink SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewLink
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="EmpManagerVL"
+  Version="11.1.2.64.36"
+  EntityAssociation="ADFBCModel.Entity.EmpManagerFkAssoc">
+  <ViewLinkDefEnd
+    Name="ManagerIdEmployeesEOView"
+    Cardinality="1"
+    Source="true"
+    Owner="ADFBCModel.View.EmployeesVO">
+    <DesignTime>
+      <Attr Name="_finderName" Value="ManagerIdEmployeesEOView"/>
+      <Attr Name="_isUpdateable" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="ADFBCModel.View.EmployeesVO.EmployeeId"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+  <ViewLinkDefEnd
+    Name="EmployeesEOView"
+    Cardinality="-1"
+    Owner="ADFBCModel.View.EmployeesVO">
+    <DesignTime>
+      <Attr Name="_finderName" Value="EmployeesEOView"/>
+      <Attr Name="_isUpdateable" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="ADFBCModel.View.EmployeesVO.ManagerId"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+</ViewLink>
