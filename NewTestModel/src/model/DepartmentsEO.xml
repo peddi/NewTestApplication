@@ -42,7 +42,14 @@
     SQLType="NUMERIC"
     Type="java.lang.Integer"
     ColumnType="NUMBER"
-    TableName="DEPARTMENTS"/>
+    TableName="DEPARTMENTS">
+    <Properties>
+      <SchemaBasedProperties>
+        <LABEL
+          ResId="model.DepartmentsEO.ManagerId_LABEL"/>
+      </SchemaBasedProperties>
+    </Properties>
+  </Attribute>
   <Attribute
     Name="LocationId"
     Precision="4"
@@ -107,4 +114,8 @@
       <Item Value="model.DepartmentsEO.ManagerId"/>
     </AttrArray>
   </Key>
+  <ResourceBundle>
+    <PropertiesBundle
+      PropertiesFile="model.NewTestModelBundle"/>
+  </ResourceBundle>
 </Entity>
